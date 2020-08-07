@@ -1,0 +1,1021 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		009D38DDBB9448938EFC0065 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 93662AF0F62047D2846BD8AD /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				AFE3105D9AA941CA977299C4 /* CMake Rules */,
+			);
+			dependencies = (
+				6F9A6578955540B5BCF3A1B7 /* PBXTargetDependency */,
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		707E1593CEAA488E8736A7B0 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 09EA1597D1C449539E3C4DBE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				52A92D7AF4C84E0897C9A29E /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		ADE7FE3EEF924C7788052AEA /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 87D9FF3945864EF5A72D831C /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				92D918A723924D3DA989BD3C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				160C208972F84227832548C0 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		B953F34FF15946DAB635E107 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E90C83C331734641B4B9607C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				00015C6566E84AF0BAE414A6 /* CMake Rules */,
+			);
+			dependencies = (
+				8530C33BF3C2438BB531CFE2 /* PBXTargetDependency */,
+				4FAC40338F564C688D93E113 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		007791E614D7476C8A262617 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 3533ACA40EAD4D9EB957457A /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/include/GLFW/glfw3.h */; };
+		008D938A0D1148F2B5C34467 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = C0A82617C2584860A7C04A19 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_init.m */; };
+		0FFE4C7A52034A1E8AEE24AA /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 008EDF4ADF364E5AA75D9224 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_monitor.m */; };
+		1C1155B16FE842829A91D538 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/posix_tls.c */ = {isa = PBXBuildFile; fileRef = 34259D318FCC4388A641103E /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/posix_tls.c */; };
+		3F092FABF6A941FCB2FB5878 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/posix_tls.h */ = {isa = PBXBuildFile; fileRef = 106497EC15AF4C24BA1B2E16 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/posix_tls.h */; };
+		7264C780896F46E7BEE06ED8 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/mach_time.c */ = {isa = PBXBuildFile; fileRef = 0BED8638153F409D9606E098 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/mach_time.c */; };
+		745F837821F34BC5BFB28132 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 54F4BBEF4119459F8215E26F /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/monitor.c */; };
+		7BBFC46083B14760B7A0C738 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/iokit_joystick.h */ = {isa = PBXBuildFile; fileRef = C84F0231854542838BC6D74F /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/iokit_joystick.h */; };
+		AB0840F229F145C592C4EFCD /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = E105004B4103407EB66934DA /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/include/GLFW/glfw3native.h */; };
+		AF712BD4D57147CF9483E588 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 21DF4B0B450B4B888FC7D44C /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_platform.h */; };
+		B39B0A388B61461D8FABDDED /* /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = BC9052B784BC46DB89A7D0B7 /* /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src/glfw_config.h */; };
+		BBC66421845342CCBA2D267E /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/internal.h */ = {isa = PBXBuildFile; fileRef = 86010CA8BF9243BE919A300D /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/internal.h */; };
+		BC887BBDAECC4DB0A289C432 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/input.c */ = {isa = PBXBuildFile; fileRef = 738A8C836F164BCD8BFC9F17 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/input.c */; };
+		CAB3EDB839434531864BB13F /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/window.c */ = {isa = PBXBuildFile; fileRef = 23F42992FC0A4594AC0754FD /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/window.c */; };
+		E473E419C062481FA66C8176 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/iokit_joystick.m */ = {isa = PBXBuildFile; fileRef = 4F52F090DC73495184BFB4CB /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/iokit_joystick.m */; };
+		E93FA448D8A740FA8408541A /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = BCC97E370DBB41AE8DFEA495 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/nsgl_context.h */; };
+		E9667416AC3D41FFB9A0DE2E /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 76F64D9006AE4BBCA0F27CD6 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/CMakeLists.txt */; };
+		F056375886174D29B96A5BDE /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = A277A3341CA34BF7BB66C855 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/nsgl_context.m */; };
+		F8DEDC8AE8FE48FCA0E4F3E6 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/context.c */ = {isa = PBXBuildFile; fileRef = 4EAE4D7E5D8441F9AF1C54C0 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/context.c */; };
+		F8EC37E5DD3B47BE82398EA9 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/init.c */ = {isa = PBXBuildFile; fileRef = AC885B8A81BD4032BB8F95C7 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/init.c */; };
+		FA28FCA103F14D7DAD79366C /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = E72D3BE0A1CA459EAA905AC1 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_window.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0069431EAB7A410A82BF98A7 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		96FAD0415FBE4C3F99A5693A /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		AC1B2FCC96F14BDD997098AC /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		CABD6F03300A47D9935CF9F2 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0E07B45396E94146860EF0FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDBEEC2CDC54AA9B9B30B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 707E1593CEAA488E8736A7B0;
+			remoteInfo = ZERO_CHECK;
+		};
+		67F154CE627A4383AD1FDFBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDBEEC2CDC54AA9B9B30B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ECBEBF4DE7A492F838F6E9F;
+			remoteInfo = glfw;
+		};
+		8B84C5F7E7A24182849CA48B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDBEEC2CDC54AA9B9B30B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 707E1593CEAA488E8736A7B0;
+			remoteInfo = ZERO_CHECK;
+		};
+		D31EB9BA53D842B59934E2CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDBEEC2CDC54AA9B9B30B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B953F34FF15946DAB635E107;
+			remoteInfo = ALL_BUILD;
+		};
+		E38CDCA471D54757B0955624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDBEEC2CDC54AA9B9B30B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 707E1593CEAA488E8736A7B0;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008EDF4ADF364E5AA75D9224 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		0BED8638153F409D9606E098 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/mach_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mach_time.c; path = src/mach_time.c; sourceTree = SOURCE_ROOT; };
+		106497EC15AF4C24BA1B2E16 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = src/posix_tls.h; sourceTree = SOURCE_ROOT; };
+		20C5A78AACB04A268F76BE64 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		21DF4B0B450B4B888FC7D44C /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		23F42992FC0A4594AC0754FD /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = src/window.c; sourceTree = SOURCE_ROOT; };
+		2EBD3C6A28C54612BD01EF91 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		34259D318FCC4388A641103E /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = src/posix_tls.c; sourceTree = SOURCE_ROOT; };
+		3533ACA40EAD4D9EB957457A /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		4EAE4D7E5D8441F9AF1C54C0 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = src/context.c; sourceTree = SOURCE_ROOT; };
+		4F52F090DC73495184BFB4CB /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/iokit_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = iokit_joystick.m; path = src/iokit_joystick.m; sourceTree = SOURCE_ROOT; };
+		54F4BBEF4119459F8215E26F /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = src/monitor.c; sourceTree = SOURCE_ROOT; };
+		6634D0C2DA744C7AB3640D8A /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		738A8C836F164BCD8BFC9F17 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = src/input.c; sourceTree = SOURCE_ROOT; };
+		76F64D9006AE4BBCA0F27CD6 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		86010CA8BF9243BE919A300D /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = src/internal.h; sourceTree = SOURCE_ROOT; };
+		A277A3341CA34BF7BB66C855 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		AC885B8A81BD4032BB8F95C7 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = src/init.c; sourceTree = SOURCE_ROOT; };
+		BC9052B784BC46DB89A7D0B7 /* /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = ../../../xcode/CGL/deps/glfw/src/glfw_config.h; sourceTree = SOURCE_ROOT; };
+		BCC97E370DBB41AE8DFEA495 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		C0A82617C2584860A7C04A19 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		C84F0231854542838BC6D74F /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/iokit_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iokit_joystick.h; path = src/iokit_joystick.h; sourceTree = SOURCE_ROOT; };
+		E105004B4103407EB66934DA /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		E72D3BE0A1CA459EAA905AC1 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		11DFC5941A2C4515A369F5BB /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				9F625EC379B34209A4DFEA93 /* CMake Rules */,
+				20C5A78AACB04A268F76BE64 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		2AEEF9A2BDDA4B77BB84F51B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3C12D00C9A504DBFA15C7CE2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0A82617C2584860A7C04A19 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_init.m */,
+				008EDF4ADF364E5AA75D9224 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_monitor.m */,
+				E72D3BE0A1CA459EAA905AC1 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_window.m */,
+				4EAE4D7E5D8441F9AF1C54C0 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/context.c */,
+				AC885B8A81BD4032BB8F95C7 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/init.c */,
+				738A8C836F164BCD8BFC9F17 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/input.c */,
+				4F52F090DC73495184BFB4CB /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/iokit_joystick.m */,
+				0BED8638153F409D9606E098 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/mach_time.c */,
+				54F4BBEF4119459F8215E26F /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/monitor.c */,
+				A277A3341CA34BF7BB66C855 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/nsgl_context.m */,
+				34259D318FCC4388A641103E /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/posix_tls.c */,
+				23F42992FC0A4594AC0754FD /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		89890EB795DA49A1AD272256 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				2AEEF9A2BDDA4B77BB84F51B /* CMake Rules */,
+				2EBD3C6A28C54612BD01EF91 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		986D965671DE4D22AF2EC3BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6634D0C2DA744C7AB3640D8A /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E72B5D9ED5C4822A427930D /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				BFA9B4D4CC414E088C5ED1A8 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		9F625EC379B34209A4DFEA93 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		ACC6772408BC4E379E14F0B2 = {
+			isa = PBXGroup;
+			children = (
+				11DFC5941A2C4515A369F5BB /* uninstall */,
+				89890EB795DA49A1AD272256 /* ALL_BUILD */,
+				9E72B5D9ED5C4822A427930D /* GLFW3 */,
+				986D965671DE4D22AF2EC3BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFA9B4D4CC414E088C5ED1A8 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				3C12D00C9A504DBFA15C7CE2 /* Source Files */,
+				CDFE0AEF89594740B4570D9B /* Header Files */,
+				76F64D9006AE4BBCA0F27CD6 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		CDFE0AEF89594740B4570D9B /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				3533ACA40EAD4D9EB957457A /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/include/GLFW/glfw3.h */,
+				E105004B4103407EB66934DA /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/include/GLFW/glfw3native.h */,
+				21DF4B0B450B4B888FC7D44C /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_platform.h */,
+				86010CA8BF9243BE919A300D /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/internal.h */,
+				C84F0231854542838BC6D74F /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/iokit_joystick.h */,
+				BCC97E370DBB41AE8DFEA495 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/nsgl_context.h */,
+				106497EC15AF4C24BA1B2E16 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/posix_tls.h */,
+				BC9052B784BC46DB89A7D0B7 /* /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src/glfw_config.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2ECBEBF4DE7A492F838F6E9F /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DBF6F2CCBB04D319D81DD8D /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				80E040A854C54518A2960456 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A0924664D9C4A50AA382F16 /* PBXTargetDependency */,
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 6634D0C2DA744C7AB3640D8A /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EDBEEC2CDC54AA9B9B30B9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1160;
+			};
+			buildConfigurationList = B697260FA80D4E16B861275F /* Build configuration list for PBXProject "GLFW" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				AC1B2FCC96F14BDD997098AC /* Debug */,
+				0069431EAB7A410A82BF98A7 /* Release */,
+				96FAD0415FBE4C3F99A5693A /* MinSizeRel */,
+				CABD6F03300A47D9935CF9F2 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = ACC6772408BC4E379E14F0B2;
+			projectDirPath = ../../../../CGL/deps/glfw;
+			projectRoot = "";
+			targets = (
+				B953F34FF15946DAB635E107 /* ALL_BUILD */,
+				707E1593CEAA488E8736A7B0 /* ZERO_CHECK */,
+				2ECBEBF4DE7A492F838F6E9F /* glfw */,
+				ADE7FE3EEF924C7788052AEA /* install */,
+				009D38DDBB9448938EFC0065 /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00015C6566E84AF0BAE414A6 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw -f /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		2B10E37471E64E2392616A26 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4141569D9693457B89AF9E62 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		5053F7D04AD44035923D27CF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		52A92D7AF4C84E0897C9A29E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw -f /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		92D918A723924D3DA989BD3C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw -f /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		AFE3105D9AA941CA977299C4 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw -f /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		B189BFFAA23F4FDE8644810A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80E040A854C54518A2960456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008D938A0D1148F2B5C34467 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_init.m */,
+				0FFE4C7A52034A1E8AEE24AA /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_monitor.m */,
+				FA28FCA103F14D7DAD79366C /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/cocoa_window.m */,
+				F8DEDC8AE8FE48FCA0E4F3E6 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/context.c */,
+				F8EC37E5DD3B47BE82398EA9 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/init.c */,
+				BC887BBDAECC4DB0A289C432 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/input.c */,
+				E473E419C062481FA66C8176 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/iokit_joystick.m */,
+				7264C780896F46E7BEE06ED8 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/mach_time.c */,
+				745F837821F34BC5BFB28132 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/monitor.c */,
+				F056375886174D29B96A5BDE /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/nsgl_context.m */,
+				1C1155B16FE842829A91D538 /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/posix_tls.c */,
+				CAB3EDB839434531864BB13F /* /Users/frobles/desktop/final/fproj/CGL/deps/glfw/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		160C208972F84227832548C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B953F34FF15946DAB635E107 /* ALL_BUILD */;
+			targetProxy = D31EB9BA53D842B59934E2CA /* PBXContainerItemProxy */;
+		};
+		2A0924664D9C4A50AA382F16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 707E1593CEAA488E8736A7B0 /* ZERO_CHECK */;
+			targetProxy = 0E07B45396E94146860EF0FA /* PBXContainerItemProxy */;
+		};
+		4FAC40338F564C688D93E113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 707E1593CEAA488E8736A7B0 /* ZERO_CHECK */;
+			targetProxy = 8B84C5F7E7A24182849CA48B /* PBXContainerItemProxy */;
+		};
+		6F9A6578955540B5BCF3A1B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 707E1593CEAA488E8736A7B0 /* ZERO_CHECK */;
+			targetProxy = E38CDCA471D54757B0955624 /* PBXContainerItemProxy */;
+		};
+		8530C33BF3C2438BB531CFE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ECBEBF4DE7A492F838F6E9F /* glfw */;
+			targetProxy = 67F154CE627A4383AD1FDFBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D4B746D46644526A458FEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/build;
+			};
+			name = Release;
+		};
+		1C99871A1C0A4134BEA1195D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/frobles/desktop/final/fproj/CGL/deps/glfw/src,/Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -w   -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2C66983E27794A8486DDB0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		35B17D35C65F4C40B3B839EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		44D577F721A44B879C3D0722 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/frobles/desktop/final/fproj/CGL/deps/glfw/src,/Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -w   -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		48B851E57E5E4692904C1EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4C3571BB07984C6EA9060A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		50EBBFC98C824D84ADC9DA36 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		56545450BAEF4214BD004D5E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		583837397E924C9D86DF69A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5C4D4461296047F2878A2505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6904C7B822AA459EB352BD84 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6ACB5AB17E824097ADB51348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/frobles/desktop/final/fproj/CGL/deps/glfw/src,/Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -fPIC -w   -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		705B9162B2EB44398706E471 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		73F6E68606A94D0A8B101B61 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7BB9695167E24450B03B4C10 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		80E9F6BE36C84F419E62EED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8FCFA792E68643C0A60824C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A058FA7877E04EA2971C3C09 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AF9323CE139C4515A89EB9C1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/build;
+			};
+			name = RelWithDebInfo;
+		};
+		BB3204A72E5148AFBEA5C655 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/build;
+			};
+			name = MinSizeRel;
+		};
+		D34DF29F8C874EB79CCF9E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/build;
+			};
+			name = Debug;
+		};
+		D530400025614AC9BCD7DBEF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F9FF7D49169645B78685DA22 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/frobles/desktop/final/fproj/CGL/deps/glfw/src,/Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC -w   -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/frobles/desktop/final/fproj/xcode/CGL/deps/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09EA1597D1C449539E3C4DBE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C66983E27794A8486DDB0CA /* Debug */,
+				48B851E57E5E4692904C1EBC /* Release */,
+				56545450BAEF4214BD004D5E /* MinSizeRel */,
+				7BB9695167E24450B03B4C10 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0DBF6F2CCBB04D319D81DD8D /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACB5AB17E824097ADB51348 /* Debug */,
+				1C99871A1C0A4134BEA1195D /* Release */,
+				44D577F721A44B879C3D0722 /* MinSizeRel */,
+				F9FF7D49169645B78685DA22 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		87D9FF3945864EF5A72D831C /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35B17D35C65F4C40B3B839EA /* Debug */,
+				8FCFA792E68643C0A60824C3 /* Release */,
+				705B9162B2EB44398706E471 /* MinSizeRel */,
+				A058FA7877E04EA2971C3C09 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		93662AF0F62047D2846BD8AD /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583837397E924C9D86DF69A9 /* Debug */,
+				5C4D4461296047F2878A2505 /* Release */,
+				D530400025614AC9BCD7DBEF /* MinSizeRel */,
+				73F6E68606A94D0A8B101B61 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B697260FA80D4E16B861275F /* Build configuration list for PBXProject "GLFW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34DF29F8C874EB79CCF9E07 /* Debug */,
+				0D4B746D46644526A458FEFD /* Release */,
+				BB3204A72E5148AFBEA5C655 /* MinSizeRel */,
+				AF9323CE139C4515A89EB9C1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E90C83C331734641B4B9607C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3571BB07984C6EA9060A5D /* Debug */,
+				80E9F6BE36C84F419E62EED3 /* Release */,
+				6904C7B822AA459EB352BD84 /* MinSizeRel */,
+				50EBBFC98C824D84ADC9DA36 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EDBEEC2CDC54AA9B9B30B9F /* Project object */;
+}

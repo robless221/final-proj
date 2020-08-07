@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>
+  body {
+    padding: 100px;
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #121212;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+</style>
+<title>CS 184 Mesh Editor</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+</head>
+
+
+<body>
+
+<h1 align="middle">CS 184: Computer Graphics and Imaging, Summer 2020</h1>
+<h1 align="middle">Project 2: Mesh Editor</h1>
+<h2 align="middle">Francisco Robles, CS184-SU20</h2>
+
+<br><br>
+
+<div>
+
+<h2 align="middle">Overview</h2>
+<p>For this project, the idea was to implement and learn about bezier surfaces and understand how to draw more detailed curves using control points. Also Area-Weighted Vertex Normals were implemented to be able to successfully interpolate shading trhough meshes. In addition to this, operation such as flipping, splitting, and sudvision were implemented to accomplashing upsampling in meshes. This was an interesting project to work on and learn from, giving a more insight on how geometric modeling is done. I enjoyed working on this project because it was really good on helping me understand underlying concepts that we have covered in class.</p>
+
+<h2 align="middle">Section I: Bezier Curves and Surfaces</h2>
+
+<h3 align="middle">Part 1: Bezier curves with 1D de Casteljau subdivision</h3>
+
+<p>The idea behind De Casteljau's algorithm is to implement a recursive method to be able to succesfully evaluate polynomials in Bézier curves. These curves are really useful because allow us to draw smooth curves just by using points on a path. It is used n control points starting from P0 and all the way to Pn-1. Each pair such as (p0, p1), (p1, p2) ... (Pn-2 , Pn-1) is interpolated by a factor of t. In the end, only one point lasts, which is known it lies on the Bézier curve with parameter t. It was interesting to see how curves were interpolated using this method. The following images show different control points used to interpolate a curve:</p>
+
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/1.png" align="middle" width="360px"/>
+        <figcaption align="middle">Step 1</figcaption>
+      </td>
+      <td>
+        <img src="images/2.png" align="middle" width="400px"/>
+        <figcaption align="middle">Step 2</figcaption>
+      </td>
+    </tr>
+    <br>
+    <tr>
+      <td>
+        <img src="images/3.png" align="middle" width="400px"/>
+        <figcaption align="middle">Step 3</figcaption>
+      </td>
+      <td>
+        <img src="images/4.png" align="middle" width="400px"/>
+        <figcaption align="middle">Step 4</figcaption>
+      </td>
+    </tr>
+      <td>
+        <img src="images/6.png" align="middle" width="400px"/>
+        <figcaption align="middle">Step 5/6 with parameter t</figcaption>
+      </td>
+      <td>
+        <img src="images/6t.png" align="middle" width="400px"/>
+        <figcaption align="middle">Last step with different t</figcaption>
+      </td>
+  </table>
+</div>
+
+
+<h3 align="middle">Part 2: Bezier surfaces with separable 1D de Casteljau subdivision</h3>
+
+<p>The algorithm described by De Casteljau could be used many times to get all the points on a Bézier surface. For this task, it was needed to follow up from task 1 given the similarity, but this time a 3D vector was being interpolated. Pairs defined by the control points were interpolated using linear interpolation. Four points were obtained from control points given a factor u, then the curve was interpolated at a factor of v and a point on the Bézier surface was obtained. Then, point u was evaluated on the 4 Bézier curves to get 4 control points. The following image demonstrates the resulting mesh:
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/part2.png" align="middle" width="360px"/>
+        <figcaption align="middle">Resulting mesh from part 2</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h2 align="middle">Section II: Sampling</h2>
+
+<h3 align="middle">Part 3: Average normals for half-edge meshes</h3>
+
+<p>For this task, it was implemented a function to perform area-weighted normal vectors. The goal of this implementation is to perform better shading in smooth surfaces. To calculate the normal vectors, it was needed to calculated the weighted average of the normal vectors which created a better gradient on the mesh surface. Using vertex's halfedge, the rest of the vertices were obtained to sum all of them into two vectors, u and v. After performing cross product using these two vectors, the normal vector was obtained. The following images demonstrate how different flat and Phong shading look like:</p>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/flat.png" align="middle" width="360px"/>
+        <figcaption align="middle">Flat Shading</figcaption>
+      </td>
+      <td>
+        <img src="images/phong.png" align="middle" width="400px"/>
+        <figcaption align="middle">Phong Shading</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h3 align="middle">Part 4: Half-edge flip</h3>
+
+<p>For this task, the underlying logic to perform flip operations on edges was implemented. It was importante to clearly understand how many different structures work and point to other structure instances. This structures types include Halfedge, Edges, Vertices and Faces. It was essential and useful to sketch triangles before and after a flip operation; understanding how how triangles look before and after the operation was important to the development of the implementation, given that flipping changes the orientation of the inner edge, and as a result, an arbitrary Halfedge will point to a different next Halfedge, a different edge and different vertices. The same apply to vertices, edges and faces; all these structures are affected by the flip operation and therefore must be updated accordingly. To debug this task, it was required carefully follow and understand the triangle sketch drawn, given that this sketch contained a comprehensive explanation of where every single structure point to before and after the flip operation. After implementing the function, meshes were created and tested by flipping edges, and flipping them back again to their original state. The following images show how meshes change after perform flip operations:</p>
+
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/before1.png" align="middle" width="360px"/>
+        <figcaption align="middle">Before</figcaption>
+      </td>
+      <td>
+        <img src="images/after1.png" align="middle" width="400px"/>
+        <figcaption align="middle">After</figcaption>
+      </td>
+    </tr>
+    <br>
+    <tr>
+      <td>
+        <img src="images/before2.png" align="middle" width="400px"/>
+        <figcaption align="middle">Before</figcaption>
+      </td>
+      <td>
+        <img src="images/after2.png" align="middle" width="400px"/>
+        <figcaption align="middle">After</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h3 align="middle">Part 5: Half-edge split</h3>
+
+<p>For this task, it was implemented the underlying logic to successfully split edges in a similar way as the flip function. It was necessary to understand how the Halfedge structure works, as well as the vertex, edge and face structures. Knowing this, it was really useful to draw two triangles with an edge in common before and after the splitting process. Doing this allowed to see how pointers from different structures were affected by the split. Also, given that splitting converts two triangles into 4, it was required to create 6 new Halfedge structures to support the new triangles, 3 new edges, given that now it was needed to have 4 inner edges to support splitting, and 2 new faces were included to add up to 4 inner faces in total. Also, a new vertex was included, this was called the midpoint vertex; it was calculated taking the average of a top vertex and a bottom vertex. Then, after carefully checking structures using the check_for(...)  function, a successful split function was accomplished. It was a really useful debugging because a face was not showing up after splitting an edge, and it was found that the original faces were also need to be updated. Given that the function only requires to rearrange pointers and assign new ones, the function performs in constant time. To check for correctness, some meshes were created and performed on it split operations and also a mix of flip then split, and split then flip, letting us know that the implementation succeeded. The following images demonstrated how the implementation tested using meshes:</p>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/beforeS.png" align="middle" width="360px"/>
+        <figcaption align="middle">Before edge splits</figcaption>
+      </td>
+      <td>
+        <img src="images/afterS.png" align="middle" width="400px"/>
+        <figcaption align="middle">After edge splits</figcaption>
+      </td>
+    </tr>
+    <br>
+    <tr>
+      <td>
+        <img src="images/beforeSF.png" align="middle" width="400px"/>
+        <figcaption align="middle">Before edge splits and flips</figcaption>
+      </td>
+      <td>
+        <img src="images/afterSF.png" align="middle" width="400px"/>
+        <figcaption align="middle">After edge splits and flips</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h3 align="middle">Part 6: Loop subdivision for mesh upsampling</h3>
+
+<p>For this task, the idea was to perform upsampling using split and flip operations on meshes. To achieve, a subdivision loop was implemented to divide triangles into four smaller triangles and update all the vertices of the resulting mesh. First, the new vertices locations for the new smaller triangles were calculated given a formula that relates the original vertices with the new ones. As recalled from the project spec, the position of a new vertex splitting the shared edge (A, B)(A,B) between a pair of triangle (A, C, B)(A,C,B) and (A, B, D)(A,B,D) is 3/8 * (A + B) + 1/8 * (C + D). Similarly, to update the position of an old vertex, the following calculation was used: (1 - n * u) * original_position + u * original_neighbor_position_sum, where n is the amount of edges incident to the vertex, original_position is the original position of the old vertex, and original_neighbor_position_sum is the sum of all original positions of the neighboring vertices. The constant u is calculated using the following logic, if n is equal to 3, we set u = 3/16, else we set it equal to 3/(8*n). Loop Subdivision seems to delete corners making figures smoother, a great example is the following mesh:</p>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/beforeloop.png" align="middle" width="360px"/>
+        <figcaption align="middle">Before loop subdivision</figcaption>
+      </td>
+      <td>
+        <img src="images/afterloop.png" align="middle" width="400px"/>
+        <figcaption align="middle">After loop subdivision</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>The following cube is affected by loop subdivision given that it becomes more and more circular after every iteration of the loop:</p>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/cube1.png" align="middle" width="360px"/>
+        <figcaption align="middle">Cube</figcaption>
+      </td>
+      <td>
+        <img src="images/cube2.png" align="middle" width="400px"/>
+        <figcaption align="middle">Getting circular</figcaption>
+      </td>
+    </tr>
+    <br>
+    <tr>
+      <td>
+        <img src="images/cube3.png" align="middle" width="400px"/>
+        <figcaption align="middle">...and more circular...</figcaption>
+      </td>
+      <td>
+        <img src="images/cube4.png" align="middle" width="400px"/>
+        <figcaption align="middle">...and even more circular</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>After performing some flips and splits, the cube now becomes more symmetric than before, giving a better effect on it. This happens because now the cube have more pre-processed triangles which help to upsample more accurate.</p>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/sym1.png" align="middle" width="360px"/>
+        <figcaption align="middle">With some flip/split operations</figcaption>
+      </td>
+      <td>
+        <img src="images/sym2.png" align="middle" width="400px"/>
+        <figcaption align="middle">Cube look more symmetric</figcaption>
+      </td>
+    </tr>
+    <br>
+    <tr>
+      <td>
+        <img src="images/sym3.png" align="middle" width="400px"/>
+        <figcaption align="middle">Cube look more symmetric</figcaption>
+      </td>
+      <td>
+        <img src="images/sym4.png" align="middle" width="400px"/>
+        <figcaption align="middle">Cube look more symmetric</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -57,7 +57,15 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "/Users/frobles/Desktop/final/fproj/dae/box.dae"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "/Users/frobles/Desktop/final/fproj/dae/weird.dae"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/frobles/Desktop/final/final-proj/dae/cr.dae"
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
@@ -66,6 +74,10 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Users/frobles/Desktop/final/fproj/dae/icosahedron/input.dae"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/frobles/Desktop/final/fproj/dae/peter.dae"
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
@@ -86,7 +98,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Users/frobles/Desktop/final/fproj/dae/quadball.dae"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
